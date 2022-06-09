@@ -1,0 +1,56 @@
+.topbarz {
+    display: grid;
+    width:100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    height: 700px;
+    gap: 20px;
+
+    /*background-image: url('./topbar_bg.jpeg');
+    background-size: cover;*/
+
+    grid-template-areas:
+        "left right";
+
+}
+
+.header {
+    grid-area: header;
+    width: 100%
+}
+
+.left {
+    grid-area:left;
+
+}
+
+.right {
+    grid-area: right;
+    align-self: center;
+    justify-self: flex-end;
+
+
+}
+
+.logopic {
+    width: 70%;
+    height: 70%;
+}
+.text {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+}
+
+.textWithBorder {
+    background: linear-gradient(254deg, rgba(2, 0, 36, 0.4) 0%, rgba(231, 42, 42, 0.4) 0%, rgba(0, 212, 255, 0.4) 100%);
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+

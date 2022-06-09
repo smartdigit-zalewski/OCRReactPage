@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+        "socialbar"
+        "header"
+        "topbar"
+        "middlebar"
+        "bottombar"
+        "footer";
+}
+
+.socialMediaIconsBar {
+  grid-area: socialbar;
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  align-self: center;
+  height: 20px;
+  font-size: 30px;
+  transition: 1s;
+}
+.socialMediaIconsBar a {
+  transition: 0.5s;
+}
+.socialMediaIconsBar a:hover {
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+.header {
+  margin-top: 50px;
+  grid-area: header;
+  height: auto;
+  transition: 1s;
+}
+
+.topbar {
+  grid-area: topbar;
+  height: auto;
+  transition: 1s;
+}
+
+.middlebar {
+  grid-area: middlebar;
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 850px;
+  background: rgba(60, 60, 60, 0.4);
+  /*background: linear-gradient(254deg, rgba(2, 0, 36, 0.4) 0%, rgba(231, 42, 42, 0.4) 0%, rgba(0, 212, 255, 0.4) 100%);*/
+}
+
+.middlebar img{
+  padding: 30px;
+  align-self: center;
+  height: auto;
+  width: auto;
+  max-width: 900px;
+  max-height: 900px;
+}
+.middlebar p{
+  align-self: center;
+  margin-left: 30px;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: lighter;
+  /*background-color: white;*/
+  background: linear-gradient(254deg, rgba(2, 0, 36, 0.4) 0%, rgba(231, 42, 42, 0.4) 0%, rgba(0, 212, 255, 0.4) 100%);
+  color: white;
+
+}
+.bottombar {
+  grid-area: bottombar;
+  margin-top: 20px;
+  height: 850px;
+  background: rgba(60, 60, 60, 0.4)
+
+
+}
+.scroll {
+  grid-area: header;
+  margin-top: 0;
+  height: 85px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(120, 120, 120);
+  transition: 0.5s;
+}
+
+.footer {
+  grid-area: footer;
+  background: linear-gradient(254deg, rgba(2, 0, 36, 0.4) 0%, rgba(231, 42, 42, 0.4) 0%, rgba(0, 212, 255, 0.4) 100%);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+}

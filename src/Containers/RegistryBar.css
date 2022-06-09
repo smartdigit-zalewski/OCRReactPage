@@ -1,0 +1,39 @@
+.box {
+
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    padding: 10vh;
+    background: linear-gradient(254deg, rgba(2, 0, 36, 0.2) 0%, rgba(231, 42, 42, 0.2) 0%, rgba(0, 212, 255, 0.2) 100%);
+    border-radius: 25px;
+
+
+}
+
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.registry-bar {
+    background: rgba(60, 60, 60, 0.4);
+    width: 100%;
+    margin-top: 85px;
+    min-height: calc(100vh - 85px);
+    animation: fadein 0.5s;
+
+}
+
+.desc {
+    font-size: 20px !important;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: black;
+}

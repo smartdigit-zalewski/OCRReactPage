@@ -1,0 +1,78 @@
+.navbar {
+    width: 100%;
+    display: inline-flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    /*margin-top: 50px;*/
+
+
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(254deg, rgba(2, 0, 36, 0.4) 0%, rgba(231, 42, 42, 0.4) 0%, rgba(0, 212, 255, 0.4) 100%);
+    height: 85px;
+
+}
+.logo {
+    padding: 3px;
+    align-self: center;
+    margin-bottom: 20px;
+
+}
+
+.navbarButton {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size:20px;
+    letter-spacing: 3px;
+    color: white;
+    transition: 1s;
+}
+.navbarButton:hover {
+    font-size: 23px;
+    cursor: pointer;
+}
+.container {
+
+    position: relative;
+    display: inline-block;
+
+}
+
+
+.dropdown {
+    position: absolute;
+    margin: 22px;
+    top: 100%;
+    background: linear-gradient(254deg, rgba(2, 0, 36, 0.4) 0%, rgba(231, 42, 42, 0.4) 0%, rgba(0, 212, 255, 0.4) 100%);
+    transform: translateX(-37px);
+}
+
+.dropdownWrapper {
+    display: inline-flex;
+}
+
+span {
+    align-self: center;
+    color: white;
+    font-size: 1.2em;
+}
+span:hover {
+    cursor: pointer;
+}
+.icon {
+    color: white;
+    align-self: center;
+}
+.icon:hover {
+    cursor: pointer;
+}
+
+.buttonBorder:hover{
+    border-style: solid;
+    border-color: white;
+}
+
+img:hover {
+    cursor: pointer;
+}
